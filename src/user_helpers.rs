@@ -24,4 +24,5 @@ pub fn create_user(data: Json<NewUser>) -> ActixUser {
         uuid:Uuid::new_v4()
     }
 }
+//the hasher below is really slow
 //hash_encoded(data.unhashed.as_bytes(), salt, &config).unwrap(),

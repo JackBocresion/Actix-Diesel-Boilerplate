@@ -19,21 +19,28 @@ use crate::models::NewUser;
 mod user_helpers;
 use user_helpers::create_user;
 use argon2::Config;
+extern crate dotenv;
+use dotenv::dotenv;
+use std::env;
 
 async fn create(json: web::Json<NewUser>, req:HttpRequest, pool:web::Data<PgPool> ) -> impl Responder {
     use schema::actix_users;
     let conn = pool.get().unwrap();
     let user = create_user(json);
-    diesel::insert_into(actix_users::table)
+    let inserted_user = diesel::insert_into(actix_users::table)
         .values(&user)
-        .execute(&conn)
+        //.execute(&conn)
+        .get_results::<ActixUser>(&conn)
         .unwrap();
-    "fsdafs"
+    web::Json(inserted_user)
 }
 
 #[actix_rt::main]
 async fn main() -> std::io::Result<()> {
-    let database_url = "postgresql://jackbocresion@localhost";
+    dotenv().ok();
+    let database_url = env::var("DATABASE_URL")
+        .expect("DATABASE_URL must be set");
+
     let manager = ConnectionManager::<PgConnection>::new(database_url);
     let pool = r2d2::Pool::builder()
         .build(manager)

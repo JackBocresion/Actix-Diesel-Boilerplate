@@ -1,8 +1,8 @@
 table! {
     actix_users (uuid) {
         uuid -> Uuid,
-        username -> Nullable<Varchar>,
-        password -> Nullable<Varchar>,
+        username -> Varchar,
+        password -> Varchar,
     }
 }
 

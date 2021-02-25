@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="" />
+    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="removed .env.... oops :)">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user_helpers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/user_helpers.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
@@ -44,34 +69,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,22 +95,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614183885273</updated>
-      <workItem from="1614183886341" duration="8733000" />
+      <workItem from="1614183886341" duration="9342000" />
+      <workItem from="1614272067760" duration="1524000" />
     </task>
+    <task id="LOCAL-00001" summary="removed .env.... oops :)">
+      <created>1614203920790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614203920790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed .env.... oops :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed .env.... oops :)" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614272791160">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614272791160" />
     <state x="48" y="133" key="SettingsEditor" timestamp="1614195493393">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="48" y="133" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614195493393" />
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614203421288">
+    <state x="160" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614273539593">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614203421288" />
+    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273539593" />
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614203488841">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

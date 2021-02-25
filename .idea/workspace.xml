@@ -22,12 +22,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="removed .env.... oops :)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="update gitignore">
+      <change afterPath="$PROJECT_DIR$/table.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schema.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user_helpers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/user_helpers.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614183885273</updated>
       <workItem from="1614183886341" duration="9342000" />
-      <workItem from="1614272067760" duration="1524000" />
+      <workItem from="1614272067760" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="removed .env.... oops :)">
       <created>1614203920790</created>
@@ -105,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614203920790</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update gitignore">
+      <created>1614273650986</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614273650987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed .env.... oops :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed .env.... oops :)" />
+    <MESSAGE value="update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614272791160">
@@ -136,10 +141,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="48" y="133" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614195493393" />
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614273539593">
+    <state x="160" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614273681953">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273539593" />
+    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273681953" />
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614203488841">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

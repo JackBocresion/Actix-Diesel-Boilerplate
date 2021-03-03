@@ -22,9 +22,11 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="update gitignore">
-      <change afterPath="$PROJECT_DIR$/table.sql" afterDir="false" />
+    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="add sql for migrations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user_helpers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/user_helpers.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,14 @@
       <option name="presentableId" value="Default" />
       <updated>1614183885273</updated>
       <workItem from="1614183886341" duration="9342000" />
-      <workItem from="1614272067760" duration="1682000" />
+      <workItem from="1614272067760" duration="4108000" />
+      <workItem from="1614312974710" duration="21000" />
+      <workItem from="1614351620999" duration="843000" />
+      <workItem from="1614356213801" duration="3332000" />
+      <workItem from="1614366791604" duration="1831000" />
+      <workItem from="1614604840869" duration="6116000" />
+      <workItem from="1614713305148" duration="5239000" />
+      <workItem from="1614800983957" duration="2414000" />
     </task>
     <task id="LOCAL-00001" summary="removed .env.... oops :)">
       <created>1614203920790</created>
@@ -109,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614273650987</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add sql for migrations">
+      <created>1614273808972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614273808972</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,28 +146,35 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed .env.... oops :)" />
     <MESSAGE value="update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+    <MESSAGE value="add sql for migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sql for migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614272791160">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614272791160" />
-    <state x="48" y="133" key="SettingsEditor" timestamp="1614195493393">
+    <state x="48" y="133" key="SettingsEditor" timestamp="1614366843287">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="48" y="133" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614195493393" />
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2" timestamp="1614273681953">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="48" y="133" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614366843287" />
+    <state x="160" y="274" key="Vcs.Push.Dialog.v2" timestamp="1614803492531">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273681953" />
+    <state x="160" y="274" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614803492531" />
+    <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273811675" />
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614203488841">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614203488841" />
-    <state x="225" y="256" key="run.anything.popup" timestamp="1614195856701">
+    <state x="225" y="238" key="run.anything.popup" timestamp="1614803401968">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="225" y="238" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614803401968" />
+    <state x="225" y="238" key="run.anything.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614615295342" />
+    <state x="299" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1614719611241">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="225" y="256" key="run.anything.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614195856701" />
+    <state x="299" y="258" width="670" height="676" key="search.everywhere.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614719611241" />
   </component>
 </project>

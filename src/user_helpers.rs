@@ -14,15 +14,4 @@ fn hash<T: Hash>(t: &T) -> u64 {
 }
 
 
-pub fn create_user(data: Json<NewUser>) -> ActixUser {
-    let salt = b"salsdfsdfsdft";
-    let config = Config::default();
 
-    ActixUser {
-        username:data.username.to_string(),
-        password:xx::hash64(data.unhashed.to_string()).to_string(),
-        uuid:Uuid::new_v4()
-    }
-}
-//the hasher below is really slow
-//hash_encoded(data.unhashed.as_bytes(), salt, &config).unwrap(),

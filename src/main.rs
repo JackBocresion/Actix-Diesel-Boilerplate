@@ -5,7 +5,7 @@ use diesel::r2d2::{ConnectionManager, Pool};
 #[macro_use]
 extern crate diesel;
 #[get("/hello")]
-async fn greet(req:HttpRequest) -> impl Responder {
+async fn greet(_req:HttpRequest) -> impl Responder {
     "hello world"
 }
 use models::ActixUser;
@@ -16,13 +16,14 @@ mod schema;
 use uuid::Uuid;
 use crate::models::NewUser;
 mod user_helpers;
+
 use argon2::Config;
 extern crate dotenv;
 use dotenv::dotenv;
 use std::env;
 
-#[post("/create")]
-async fn create_user(json: web::Json<NewUser>, req:HttpRequest, pool:web::Data<PgPool> ) -> Result<web::Json<ActixUser>, HttpResponseBuilder> {
+#[post("/newuser")]
+async fn create_user(json: web::Json<NewUser>, _req:HttpRequest, pool:web::Data<PgPool> ) -> Result<web::Json<ActixUser>, HttpResponseBuilder> {
     use schema::actix_users;
     let conn = pool.get().unwrap();
     let user = ActixUser::new(json);
@@ -37,8 +38,8 @@ async fn create_user(json: web::Json<NewUser>, req:HttpRequest, pool:web::Data<P
 }
 
 use actix_web::http::{StatusCode};
-#[get("/getall")]
-async fn get_users(req:HttpRequest, pool:web::Data<PgPool>) -> Result<web::Json<Vec<ActixUser>>, HttpResponseBuilder> {
+#[get("/users")]
+async fn get_users(_req:HttpRequest, pool:web::Data<PgPool>) -> Result<web::Json<Vec<ActixUser>>, HttpResponseBuilder> {
     use schema::actix_users::dsl::*;
     let conn = pool.get().unwrap();
     let users = actix_users
@@ -61,7 +62,8 @@ use serde::{Serialize, Serializer};
 use actix_web::dev::HttpResponseBuilder;
 
 
-#[get("/getone/{username}")]
+
+#[get("/user/{username}")]
 async fn get_one_user(_req:HttpRequest, pool:web::Data<PgPool>, usr:web::Path<String>) -> Result<web::Json<ActixUser>, HttpResponseBuilder> {
     use schema::actix_users::dsl::*;
     use self::diesel::prelude::*;

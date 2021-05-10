@@ -22,11 +22,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="add sql for migrations">
+    <list default="true" id="5aa14c7c-7a2f-4719-80e6-7517c4c17dbd" name="Default Changelist" comment="Updated routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user_helpers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/user_helpers.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,20 +65,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/ws" />
+    </key>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -102,7 +91,9 @@
       <workItem from="1614366791604" duration="1831000" />
       <workItem from="1614604840869" duration="6116000" />
       <workItem from="1614713305148" duration="5239000" />
-      <workItem from="1614800983957" duration="2414000" />
+      <workItem from="1614800983957" duration="6723000" />
+      <workItem from="1614825008234" duration="61000" />
+      <workItem from="1620619557365" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="removed .env.... oops :)">
       <created>1614203920790</created>
@@ -125,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614273808972</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added more specific reponses and error handeling">
+      <created>1614803549696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614803549696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,34 +145,41 @@
     <MESSAGE value="removed .env.... oops :)" />
     <MESSAGE value="update gitignore" />
     <MESSAGE value="add sql for migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sql for migrations" />
+    <MESSAGE value="Added more specific reponses and error handeling" />
+    <MESSAGE value="Updated routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614272791160">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="304" y="360" key="#com.intellij.fileTypes.FileTypeChooser/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614272791160" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614807208637">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614807208637" />
     <state x="48" y="133" key="SettingsEditor" timestamp="1614366843287">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="48" y="133" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614366843287" />
-    <state x="160" y="274" key="Vcs.Push.Dialog.v2" timestamp="1614803492531">
+    <state x="160" y="274" key="Vcs.Push.Dialog.v2" timestamp="1614803554036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="160" y="274" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614803492531" />
+    <state x="160" y="274" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614803554036" />
     <state x="160" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614273811675" />
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614203488841">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="362" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614203488841" />
-    <state x="225" y="238" key="run.anything.popup" timestamp="1614803401968">
+    <state x="225" y="238" key="run.anything.popup" timestamp="1614805982863">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="225" y="238" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614803401968" />
+    <state x="225" y="238" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614805982863" />
     <state x="225" y="238" key="run.anything.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614615295342" />
-    <state x="299" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1614719611241">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="299" y="240" width="670" height="691" key="search.everywhere.popup" timestamp="1614807211985">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="299" y="240" width="670" height="691" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1614807211985" />
     <state x="299" y="258" width="670" height="676" key="search.everywhere.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1614719611241" />
   </component>
 </project>
